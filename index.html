@@ -14,6 +14,7 @@
     <script type="text/javascript">
       var socket = io();
       $('form').submit(function () {
+        $('#messages').append($('<li>').text($('#m').val()));
         socket.emit('chat message', $('#m').val());
         $('#m').val('');
         return false;
