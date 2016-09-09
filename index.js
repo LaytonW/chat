@@ -2,6 +2,7 @@ const express = require('express');
 var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
+const port = Number(process.env.PORT || 3000)
 
 app.use(express.static('lib'));
 app.use(express.static('styles'));
@@ -16,6 +17,6 @@ io.on('connection', function (socket) {
   });
 });
 
-http.listen(80, function () {
+http.listen(port, function () {
   console.log('listening on *:3000');
 });
