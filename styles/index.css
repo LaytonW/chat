@@ -5,7 +5,7 @@
 }
 
 body {
-  font: 18px Helvetica, Arial;
+  font: 28px Helvetica, Arial;
 }
 
 form {
@@ -21,6 +21,7 @@ form input {
   padding: 10px;
   width: 90%;
   margin-right: .5%;
+  font-size: inherit;
 }
 
 form button {
@@ -28,6 +29,7 @@ form button {
   background: rgb(130, 224, 255);
   border: none;
   padding: 10px;
+  font-size: inherit;
 }
 
 #messages {
