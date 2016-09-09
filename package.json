@@ -6,6 +6,9 @@
     "type": "git",
     "url": "git+https://github.com/LaytonW/chat.git"
   },
+  "scripts": {
+    "start": "node index.js"
+  },
   "author": "WANG Zixu",
   "license": "MIT",
   "bugs": {
