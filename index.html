@@ -16,7 +16,7 @@
       $('form').submit(function () {
         var msg = $.trim($('#m').val());
         if (msg != '') {
-          $('#messages').append($('<li>').text(msg);
+          $('#messages').append($('<li>').text(msg));
           socket.emit('chat message', msg);
         }
         $('#m').val('');
